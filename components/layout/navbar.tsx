@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import { useState } from "react";
 
 type NavLink = {
   label: string;
@@ -14,10 +14,15 @@ const links: NavLink[] = [
 ];
 
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     if (href === "/#location") {
       e.preventDefault();
+      setMenuOpen(false);
       document.getElementById("location")?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      setMenuOpen(false);
     }
   };
 
@@ -39,16 +44,35 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-        <div className="text-right">
-          <div className="text-2xl font-semibold text-[#1e3a5f] tracking-tight">
-            (941) 518-9940
+        <div className="flex items-center gap-4">
+          <div className="hidden md:block text-right">
+            <div className="text-2xl font-semibold text-[#1e3a5f] tracking-tight">
+              (941) 518-9940
+            </div>
+            <div className="text-xs text-gray-400 mt-0.5">
+              5002 Lena Rd Unit 104, Bradenton, FL
+            </div>
           </div>
-          <div className="text-xs text-gray-400 mt-0.5">
-            5002 Lena Rd Unit 104, Bradenton, FL
-          </div>
+          <button
+            className="md:hidden text-[#1e3a5f] p-2"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle menu"
+          >
+            {menuOpen ? (
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            ) : (
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            )}
+          </button>
         </div>
       </div>
-      <nav className="bg-[#1e3a5f] flex">
+
+      {/* Desktop nav */}
+      <nav className="hidden md:flex bg-[#1e3a5f]">
         {links.map((link) => (
           <a
             key={link.label}
@@ -60,6 +84,22 @@ export default function Navbar() {
           </a>
         ))}
       </nav>
+
+      {/* Mobile nav */}
+      {menuOpen && (
+        <nav className="md:hidden bg-[#1e3a5f] flex flex-col">
+          {links.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              onClick={(e) => handleClick(e, link.href)}
+              className="text-[#c5d5e8] text-sm font-semibold px-5 py-4 border-b border-white/10 hover:bg-white/10 hover:text-white transition-colors"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
+      )}
     </header>
   );
 }
