@@ -107,8 +107,8 @@ export default function Home() {
               <div className="space-y-4">
                 <div>
                   <div className="text-xs font-bold uppercase tracking-widest text-[#F5A800] mb-1">Hours</div>
-                  <div className="text-gray-900 font-semibold">Mon–Fri 8am–5pm</div>
-                  <div className="text-gray-900 font-semibold">Sat 9am–2pm</div>
+                  <div className="text-gray-900 font-semibold">Mon–Fri 9am–5pm</div>
+                  <div className="text-gray-900 font-semibold">Sat-Sun Closed</div>
                 </div>
                 <div className="h-px bg-gray-100" />
                 <div>

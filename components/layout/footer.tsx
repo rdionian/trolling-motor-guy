@@ -41,8 +41,8 @@ export default function Footer() {
             <li>trollingmotorguy@gmail.com</li>
             <li>5002 Lena Rd Unit 104<br />Bradenton, FL</li>
             <li className="pt-1">
-              <span className="text-white font-semibold">Mon–Fri</span> 8am–5pm<br />
-              <span className="text-white font-semibold">Sat</span> 9am–2pm
+              <span className="text-white font-semibold">Mon–Fri</span> 9am–5pm<br />
+              <span className="text-white font-semibold">Sat-Sun</span> Closed
             </li>
           </ul>
         </div>
