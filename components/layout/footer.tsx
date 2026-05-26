@@ -6,7 +6,6 @@ type FooterLink = {
 
 const links: FooterLink[] = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
   { label: "Minn Kota Warranty", href: "https://minnkota.johnsonoutdoors.com/us/support/warranty", target: "_blank" },
   { label: "Privacy Policy", href: "/privacy" },
 ];
