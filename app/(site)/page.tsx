@@ -10,7 +10,7 @@ export default function Home() {
             alt="Trolling motor repair"
             className="w-full h-full object-cover object-bottom"
           />
-          <div className="absolute inset-0 bg-black/50" />
+          <div className="absolute inset-0 bg-black/25" />
         </div>
         <div className="relative z-10">
           <h1 className="text-4xl md:text-5xl font-bold text-white drop-shadow-md">
