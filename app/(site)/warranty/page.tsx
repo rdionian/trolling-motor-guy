@@ -39,11 +39,13 @@ export default function Warranty() {
           <div>
             <div className="text-xs font-bold uppercase tracking-widest text-[#F5A800] mb-2">Minn Kota Warranty Coverage</div>
             <ul className="space-y-1.5 text-sm text-gray-600">
-              <li className="flex items-start gap-2"><span className="w-1.5 h-1.5 rounded-full bg-[#F5A800] flex-shrink-0 mt-1.5" />Most freshwater trolling motors are covered for 2 years from date of purchase</li>
-              <li className="flex items-start gap-2"><span className="w-1.5 h-1.5 rounded-full bg-[#F5A800] flex-shrink-0 mt-1.5" />Electronics are covered for 1 year</li>
-              <li className="flex items-start gap-2"><span className="w-1.5 h-1.5 rounded-full bg-[#F5A800] flex-shrink-0 mt-1.5" />Composite shafts carry a lifetime warranty for the original purchaser</li>
-              <li className="flex items-start gap-2"><span className="w-1.5 h-1.5 rounded-full bg-[#F5A800] flex-shrink-0 mt-1.5" />Covers defects in materials and workmanship, not damage from accidents, misuse, or normal wear</li>
-              <li className="flex items-start gap-2"><span className="w-1.5 h-1.5 rounded-full bg-[#F5A800] flex-shrink-0 mt-1.5" />Proof of purchase is required. If unavailable, Minn Kota will use the serial number to determine coverage</li>
+              <li className="flex items-start gap-2"><span className="w-1.5 h-1.5 rounded-full bg-[#F5A800] flex-shrink-0 mt-1.5" />Most freshwater and saltwater motors: Limited 2-year warranty on the entire product</li>
+              <li className="flex items-start gap-2"><span className="w-1.5 h-1.5 rounded-full bg-[#F5A800] flex-shrink-0 mt-1.5" />Ultrex models (2016-2023): Limited 3-year warranty on the entire product</li>
+              <li className="flex items-start gap-2"><span className="w-1.5 h-1.5 rounded-full bg-[#F5A800] flex-shrink-0 mt-1.5" />Composite shafts: Limited Lifetime Warranty on most models</li>
+              <li className="flex items-start gap-2"><span className="w-1.5 h-1.5 rounded-full bg-[#F5A800] flex-shrink-0 mt-1.5" />Factory reconditioned motors: Limited 1-year warranty</li>
+              <li className="flex items-start gap-2"><span className="w-1.5 h-1.5 rounded-full bg-[#F5A800] flex-shrink-0 mt-1.5" />Covers defects in materials and workmanship only — damage from use, accidents, or misuse is not covered</li>
+              <li className="flex items-start gap-2"><span className="w-1.5 h-1.5 rounded-full bg-[#F5A800] flex-shrink-0 mt-1.5" />Proof of purchase required. Without a receipt, Minn Kota will use the serial number and date of manufacture to determine coverage</li>
+              <li className="flex items-start gap-2"><span className="w-1.5 h-1.5 rounded-full bg-[#F5A800] flex-shrink-0 mt-1.5" />Valid in the United States only</li>
             </ul>
           </div>
           <div>
