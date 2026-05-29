@@ -58,7 +58,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-[#1e3a5f] mb-2">Parts for Sale</h2>
             <div className="w-20 h-1 bg-[#F5A800] mb-6" />
             <p className="text-gray-500 text-sm mb-5">
-              We stock a select stock of OEM parts.
+              We stock a select range of OEM parts.
             </p>
             <ul className="space-y-3">
               {["Propellers & Hardware", "Foot Pedals & Cables", "Speed Control Boards", "Shafts & Lower Units", "Seals, Brushes & Bearings", "Batteries & Chargers"].map((item) => (
