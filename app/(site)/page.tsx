@@ -33,7 +33,7 @@ export default function Home() {
                 { name: "Prop & Drive", desc: "Prop strikes, bent shafts, lower unit damage" },
                 { name: "Electronics & Controls", desc: "Foot pedals, speed boards, autopilot systems" },
                 { name: "Corrosion & Seals", desc: "Salt flush, shaft seals, corrosion treatment" },
-                { name: "Parts & Accessories", desc: "OEM parts in stock, ship-in service available" },
+                { name: "Talon", desc: "" },
               ].map((item) => (
                 <div key={item.name} className="flex items-start gap-3">
                   <div>
@@ -58,7 +58,7 @@ export default function Home() {
             <h2 className="text-2xl font-bold text-[#1e3a5f] mb-2">Parts for Sale</h2>
             <div className="w-20 h-1 bg-[#F5A800] mb-6" />
             <p className="text-gray-500 text-sm mb-5">
-              We stock a wide selection of OEM and aftermarket Minn Kota parts. Can&apos;t find what you need? Give us a call and we&apos;ll track it down.
+              We stock a select stock of OEM parts.
             </p>
             <ul className="space-y-3">
               {["Propellers & Hardware", "Foot Pedals & Cables", "Speed Control Boards", "Shafts & Lower Units", "Seals, Brushes & Bearings", "Batteries & Chargers"].map((item) => (
