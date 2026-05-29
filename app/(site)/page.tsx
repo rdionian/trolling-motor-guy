@@ -33,7 +33,6 @@ export default function Home() {
                 { name: "Prop & Drive", desc: "Prop strikes, bent shafts, lower unit damage" },
                 { name: "Electronics & Controls", desc: "Foot pedals, speed boards, autopilot systems" },
                 { name: "Corrosion & Seals", desc: "Salt flush, shaft seals, corrosion treatment" },
-                { name: "Free Diagnostics", desc: "We call you with a quote before any work starts" },
                 { name: "Parts & Accessories", desc: "OEM parts in stock, ship-in service available" },
               ].map((item) => (
                 <div key={item.name} className="flex items-start gap-3">
@@ -77,18 +76,10 @@ export default function Home() {
           <div className="px-10 py-10">
             <h2 className="text-2xl font-bold text-[#1e3a5f] mb-2">Trolling Motors for Sale</h2>
             <div className="w-20 h-1 bg-[#F5A800] mb-6" />
-            <p className="text-gray-500 text-sm mb-5">
-              New and refurbished Minn Kota trolling motors available. All refurbished units are fully tested and come with a warranty.
-            </p>
-            <ul className="space-y-3">
-              {["Minn Kota Terrova", "Minn Kota Ultrex", "Minn Kota PowerDrive", "Minn Kota Riptide", "Minn Kota Endura", "Refurbished Units Available"].map((item) => (
-                <li key={item} className="flex items-center gap-3 text-gray-700">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#F5A800] flex-shrink-0" />
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <a href="/motors" className="mt-8 inline-block bg-[#1e3a5f] text-white font-semibold text-sm px-6 py-2.5 rounded hover:bg-[#16304f] transition-colors">
+            <div className="mb-6">
+              <img src="/images/motors.jpg" alt="Trolling motors for sale" className="w-full object-cover rounded" />
+            </div>
+            <a href="/motors" className="mt-2 inline-block bg-[#1e3a5f] text-white font-semibold text-sm px-6 py-2.5 rounded hover:bg-[#16304f] transition-colors">
               View Motors for Sale
             </a>
           </div>

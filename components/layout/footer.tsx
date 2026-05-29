@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="flex items-center gap-3 mb-3">
             <div className="font-bold text-white text-base leading-tight">The Trolling Motor Guy</div>
           </div>
-          <p className="text-[#8aafd0] text-xs leading-relaxed">Minn Kota certified repair shop serving the Bradenton area.</p>
+          <p className="text-[#8aafd0] text-xs leading-relaxed">Minn Kota Authorized Service Center serving the Bradenton area.</p>
         </div>
 
         <div>
@@ -30,6 +30,9 @@ export default function Footer() {
                 <a href={link.href} target={link.target ?? "_self"} rel={link.target === "_blank" ? "noopener noreferrer" : undefined} className="text-[#8aafd0] text-sm hover:text-white transition-colors">{link.label}</a>
               </li>
             ))}
+            <li>
+              <a href="https://www.robbworks.dev/web-development" target="_blank" rel="noopener noreferrer" className="text-[#8aafd0] text-sm hover:text-white transition-colors">Site by Robb Works</a>
+            </li>
           </ul>
         </div>
 

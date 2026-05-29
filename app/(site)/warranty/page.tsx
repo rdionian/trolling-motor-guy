@@ -34,7 +34,7 @@ export default function Warranty() {
 
         <div className="bg-[#f5f8fb] border border-[#d0d8e0] rounded-lg p-6 mb-8 space-y-4">
           <p className="text-gray-700 text-sm">
-            <strong className="text-[#1e3a5f]">The Trolling Motor Guy is an authorized Minn Kota service provider.</strong> If your motor has a defect in materials or workmanship, it may be covered under Minn Kota's limited warranty and we can handle the entire repair process on your behalf.
+            <strong className="text-[#1e3a5f]">The Trolling Motor Guy is an authorized Minn Kota Service Center.</strong> If your motor has a defect in materials or workmanship, it may be covered under Minn Kota's limited warranty and we can handle the entire repair process on your behalf.
           </p>
           <div>
             <div className="text-xs font-bold uppercase tracking-widest text-[#F5A800] mb-2">Minn Kota Warranty Coverage</div>
