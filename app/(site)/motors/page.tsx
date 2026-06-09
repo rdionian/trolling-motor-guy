@@ -34,7 +34,7 @@ export default async function Motors() {
 
   return (
     <div className="min-h-screen bg-white font-sans">
-      <div className="max-w-4xl mx-auto px-8 py-16">
+      <div className="max-w-4xl mx-auto px-4 sm:px-8 py-16">
         <h1 className="text-3xl font-bold text-[#1e3a5f] mb-2">Trolling Motors for Sale</h1>
         <div className="w-20 h-1 bg-[#F5A800] mb-4" />
         <p className="text-gray-500 text-sm mb-10">
@@ -48,10 +48,10 @@ export default async function Motors() {
         ) : (
           <div className="grid grid-cols-1 gap-6">
             {motors.map((motor: any) => (
-              <div key={motor._id} className="border border-gray-200 rounded-lg overflow-hidden flex flex-row hover:shadow-md transition-shadow">
+              <div key={motor._id} className="border border-gray-200 rounded-lg overflow-hidden flex flex-col sm:flex-row hover:shadow-md transition-shadow">
 
                 {/* Image */}
-                <div className="w-48 flex-shrink-0 bg-gray-50 flex items-center justify-center">
+                <div className="w-full h-52 sm:w-48 sm:h-auto flex-shrink-0 bg-gray-50 flex items-center justify-center">
                   {motor.image ? (
                     <img
                       src={urlFor(motor.image)}
