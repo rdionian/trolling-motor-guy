@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 type NavLink = {
   label: string;
@@ -14,9 +15,10 @@ const links: NavLink[] = [
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    if (href === "/#location") {
+    if (href === "/#location" && pathname === "/") {
       e.preventDefault();
       setMenuOpen(false);
       document.getElementById("location")?.scrollIntoView({ behavior: "smooth" });
